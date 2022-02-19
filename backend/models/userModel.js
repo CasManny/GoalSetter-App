@@ -16,7 +16,7 @@ const userSchema = mongoose.Schema({
         required: [true, "please Enter an email"],
         unique: true,
     }
-}, { timeStamps: true})
+}, { timestamps: true})
 
 userSchema.pre('save', async function() {
     const salt = await bcrypt.genSalt(10)
