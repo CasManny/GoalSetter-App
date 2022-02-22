@@ -51,6 +51,7 @@ const login = AsyncHandler(async (req, res) => {
             name: validateUser.name,
             token: generateToken(validateUser.email)
         })
+        
     } else {
         throw Error('User not found')
     }

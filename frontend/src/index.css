@@ -212,4 +212,14 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
+  
+}
+
+@media screen and (max-width: 950px) {
+  .goals {
+    grid-template-columns: 1fr;
+  }
+  .goal {
+    width: 100%;
+  }
 }

@@ -14,6 +14,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 // Routes
+
 app.use('/api/v1/user/auth', userRoutes)
 app.use('/api/v1/goals', goalRoutes)
 
